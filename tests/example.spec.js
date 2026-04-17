@@ -11,3 +11,7 @@ test('check title', async ({ page }) => {
   await expect(page).toHaveTitle("Google")
 
 });
+test('fail tc', async ({ page }) => {
+  throw new Error("failed intentionally");
+
+});
